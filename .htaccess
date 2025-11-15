@@ -1,0 +1,50 @@
+# Dose & Drop Website - URL Routing Configuration
+# This file enables clean URLs for privacy, marketing, and support pages
+
+# Enable RewriteEngine
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect /privacy to privacy.html
+    RewriteRule ^privacy/?$ privacy.html [L]
+
+    # Redirect /marketing to marketing.html
+    RewriteRule ^marketing/?$ marketing.html [L]
+
+    # Redirect /support to support.html
+    RewriteRule ^support/?$ support.html [L]
+
+    # Optional: Redirect old hash-based URLs to new clean URLs
+    # If your old site used #privacy, #marketing, etc.
+    RewriteCond %{QUERY_STRING} ^#privacy$
+    RewriteRule ^.*$ /privacy? [R=301,L]
+
+    RewriteCond %{QUERY_STRING} ^#marketing$
+    RewriteRule ^.*$ /marketing? [R=301,L]
+
+    RewriteCond %{QUERY_STRING} ^#support$
+    RewriteRule ^.*$ /support? [R=301,L]
+</IfModule>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Cache static resources
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 day"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+</IfModule>
