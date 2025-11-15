@@ -6,8 +6,7 @@ This guide explains how to deploy your website with proper URL routing for Apple
 
 Your website now supports direct linking to:
 - `yourdomain.com/privacy` - Privacy Policy page
-- `yourdomain.com/marketing` - Marketing Information page
-- `yourdomain.com/support` - Support page
+- `yourdomain.com/contact` - Contact/Support page
 - `yourdomain.com/` - Main landing page
 
 ## 📁 File Structure
@@ -16,8 +15,7 @@ Your website now supports direct linking to:
 doseanddrop-website/
 ├── index.html          # Main landing page
 ├── privacy.html        # Privacy Policy (standalone)
-├── marketing.html      # Marketing Information (standalone)
-├── support.html        # Support page (standalone)
+├── contact.html        # Contact/Support page (standalone)
 ├── .htaccess          # Apache server configuration
 ├── vercel.json        # Vercel deployment configuration
 ├── netlify.toml       # Netlify deployment configuration
@@ -36,8 +34,7 @@ If you're using a traditional web host with Apache:
 2. The `.htaccess` file will automatically handle URL routing
 3. Test your URLs:
    - `https://yourdomain.com/privacy`
-   - `https://yourdomain.com/marketing`
-   - `https://yourdomain.com/support`
+   - `https://yourdomain.com/contact`
 
 **Requirements:**
 - Apache with `mod_rewrite` enabled
@@ -152,8 +149,7 @@ After deploying, test these URLs:
 
 1. **Direct URL Access:**
    - Visit `https://yourdomain.com/privacy`
-   - Visit `https://yourdomain.com/marketing`
-   - Visit `https://yourdomain.com/support`
+   - Visit `https://yourdomain.com/contact`
 
 2. **Verify in Browser:**
    - URL should remain clean (no `.html` extension)
@@ -174,14 +170,9 @@ When submitting your iOS app, provide these URLs:
    https://yourdomain.com/privacy
    ```
 
-2. **Marketing URL** (if needed):
+2. **Support/Contact URL:**
    ```
-   https://yourdomain.com/marketing
-   ```
-
-3. **Support URL:**
-   ```
-   https://yourdomain.com/support
+   https://yourdomain.com/contact
    ```
 
 ## 🔧 Troubleshooting
@@ -218,8 +209,7 @@ When submitting your iOS app, provide these URLs:
 
 Edit the HTML files directly:
 - `privacy.html` - Update privacy policy
-- `marketing.html` - Update marketing information
-- `support.html` - Update support content
+- `contact.html` - Update contact/support information
 - `index.html` - Update main landing page
 
 ### Change Styling

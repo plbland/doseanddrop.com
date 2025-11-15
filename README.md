@@ -8,15 +8,13 @@ This website supports clean, direct URLs required for Apple App Store review:
 
 - **Home:** `https://yourdomain.com/`
 - **Privacy Policy:** `https://yourdomain.com/privacy`
-- **Marketing Info:** `https://yourdomain.com/marketing`
-- **Support:** `https://yourdomain.com/support`
+- **Contact:** `https://yourdomain.com/contact`
 
 ## 📁 Files
 
 - `index.html` - Main landing page (original single-page app)
 - `privacy.html` - Standalone privacy policy page
-- `marketing.html` - Standalone marketing information page
-- `support.html` - Standalone support page
+- `contact.html` - Standalone contact/support page
 - `.htaccess` - Apache server routing configuration
 - `vercel.json` - Vercel deployment configuration
 - `netlify.toml` - Netlify deployment configuration
@@ -34,8 +32,7 @@ python3 test-server.py
 
 # Then visit in your browser:
 # http://localhost:8000/privacy
-# http://localhost:8000/marketing
-# http://localhost:8000/support
+# http://localhost:8000/contact
 ```
 
 ### Deploy
@@ -56,14 +53,9 @@ When submitting to the App Store, use these URLs:
    https://yourdomain.com/privacy
    ```
 
-2. **Support URL:**
+2. **Support/Contact URL:**
    ```
-   https://yourdomain.com/support
-   ```
-
-3. **Marketing URL** (if requested):
-   ```
-   https://yourdomain.com/marketing
+   https://yourdomain.com/contact
    ```
 
 ## 🔧 How It Works
@@ -72,8 +64,7 @@ The website uses server-side routing to map clean URLs to HTML files:
 
 ```
 /privacy    →  privacy.html
-/marketing  →  marketing.html
-/support    →  support.html
+/contact    →  contact.html
 /           →  index.html
 ```
 

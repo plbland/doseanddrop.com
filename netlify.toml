@@ -10,13 +10,8 @@
   status = 200
 
 [[redirects]]
-  from = "/marketing"
-  to = "/marketing.html"
-  status = 200
-
-[[redirects]]
-  from = "/support"
-  to = "/support.html"
+  from = "/contact"
+  to = "/contact.html"
   status = 200
 
 # Security headers

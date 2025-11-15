@@ -9,11 +9,8 @@
     # Redirect /privacy to privacy.html
     RewriteRule ^privacy/?$ privacy.html [L]
 
-    # Redirect /marketing to marketing.html
-    RewriteRule ^marketing/?$ marketing.html [L]
-
-    # Redirect /support to support.html
-    RewriteRule ^support/?$ support.html [L]
+    # Redirect /contact to contact.html
+    RewriteRule ^contact/?$ contact.html [L]
 
     # Optional: Redirect old hash-based URLs to new clean URLs
     # If your old site used #privacy, #marketing, etc.

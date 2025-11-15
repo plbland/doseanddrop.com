@@ -17,8 +17,7 @@ class RoutingHTTPRequestHandler(SimpleHTTPRequestHandler):
         # Route mapping
         routes = {
             '/privacy': '/privacy.html',
-            '/marketing': '/marketing.html',
-            '/support': '/support.html',
+            '/contact': '/contact.html',
         }
 
         # Check if the path matches a route
@@ -45,8 +44,7 @@ def run_server(port=8000):
 ║  Test these URLs:                                  ║
 ║  • http://localhost:{port}/                        ║
 ║  • http://localhost:{port}/privacy                 ║
-║  • http://localhost:{port}/marketing               ║
-║  • http://localhost:{port}/support                 ║
+║  • http://localhost:{port}/contact                 ║
 ║                                                    ║
 ║  Press Ctrl+C to stop                              ║
 ╚════════════════════════════════════════════════════╝

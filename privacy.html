@@ -5,46 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Dose & Drop</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f9fafb;
+            background: linear-gradient(to bottom, #eff6ff, #faf5ff);
+            min-height: 100vh;
+            padding: 2rem 1rem;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
+            background: white;
             padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .header {
             text-align: center;
-            padding: 3rem 0;
-            background: linear-gradient(to right, #2563eb, #9333ea);
-            color: white;
             margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e5e7eb;
         }
         .icon {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-        }
-        h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 0.5rem;
         }
-        .subtitle {
-            opacity: 0.9;
-            font-size: 1.1rem;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        .content {
-            background: white;
-            padding: 2rem;
+        .date {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        .intro {
+            background: #eff6ff;
+            padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border-left: 4px solid #2563eb;
+        }
+        .intro h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        .intro p {
+            color: #4b5563;
         }
         h2 {
             font-size: 1.5rem;
@@ -52,19 +65,12 @@
             margin-bottom: 1rem;
             color: #1f2937;
         }
-        h3 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #374151;
-        }
         p {
             margin-bottom: 1rem;
             color: #4b5563;
         }
         ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
+            margin: 1rem 0 1rem 1.5rem;
             color: #4b5563;
         }
         li {
@@ -86,89 +92,68 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="icon">🔒</div>
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">Last updated: November 15, 2025</p>
-    </div>
-
     <div class="container">
-        <div class="content">
-            <p>At Dose & Drop, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our iOS application.</p>
-
-            <h2>1. Information We Collect</h2>
-
-            <h3>Health Data</h3>
-            <ul>
-                <li>Medication schedules and dosage information</li>
-                <li>Weight measurements synced with Apple Health</li>
-                <li>Medication adherence tracking</li>
-                <li>User-entered health notes and observations</li>
-            </ul>
-
-            <h3>Apple Health Integration</h3>
-            <p>With your explicit permission, Dose & Drop integrates with Apple Health to:</p>
-            <ul>
-                <li>Read weight data to automatically update your medication dosages</li>
-                <li>Write medication data for comprehensive health tracking</li>
-                <li>Sync your medication schedule with Health app</li>
-            </ul>
-
-            <h2>2. How We Use Your Information</h2>
-            <p>We use the information we collect to:</p>
-            <ul>
-                <li>Provide accurate medication dose calculations based on your weight</li>
-                <li>Send you timely medication reminders</li>
-                <li>Sync your health data across your devices via iCloud</li>
-                <li>Improve app functionality and user experience</li>
-            </ul>
-
-            <h2>3. Data Storage and Security</h2>
-            <p>Your privacy is paramount:</p>
-            <ul>
-                <li><strong>Local Storage:</strong> All your health data is stored locally on your device</li>
-                <li><strong>iCloud Sync:</strong> Data is synced via your private iCloud account with end-to-end encryption</li>
-                <li><strong>No Server Storage:</strong> We do not store your health information on our servers</li>
-                <li><strong>Apple Health:</strong> Health data is protected by iOS security features and Apple's privacy policies</li>
-            </ul>
-
-            <h2>4. Data Sharing</h2>
-            <p>We do not sell, trade, or share your personal health information with third parties. Your data remains private and is only accessible to you through:</p>
-            <ul>
-                <li>The Dose & Drop app on your devices</li>
-                <li>Apple Health (only with your permission)</li>
-                <li>Your iCloud account (for sync purposes)</li>
-            </ul>
-
-            <h2>5. Your Rights and Control</h2>
-            <p>You have complete control over your data:</p>
-            <ul>
-                <li><strong>Access:</strong> View all your data within the app</li>
-                <li><strong>Modification:</strong> Edit or update your information at any time</li>
-                <li><strong>Deletion:</strong> Delete your data by removing the app from your device</li>
-                <li><strong>Apple Health Permissions:</strong> Revoke access at any time through iOS Settings</li>
-            </ul>
-
-            <h2>6. Children's Privacy</h2>
-            <p>Dose & Drop is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
-
-            <h2>7. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
-            <ul>
-                <li>Posting the new Privacy Policy in the app</li>
-                <li>Updating the "Last updated" date at the top of this policy</li>
-                <li>Sending an in-app notification for significant changes</li>
-            </ul>
-
-            <h2>8. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us at:</p>
-            <p><strong>Email:</strong> support@dosedrop.app</p>
-
-            <h2>9. Apple Health Disclaimer</h2>
-            <p>Dose & Drop is not a medical device and should not be used for medical diagnosis or treatment. Always consult with your healthcare provider for medical advice. The app is designed to help you track and manage your medications, but you are responsible for verifying all dosage calculations with your healthcare provider.</p>
-
-            <a href="/" class="back-link">← Back to Home</a>
+        <div class="header">
+            <div class="icon">🔒</div>
+            <h1>Privacy Policy</h1>
+            <p class="date">Last updated: November 4, 2025</p>
         </div>
+
+        <div class="intro">
+            <h2>Your Privacy Matters</h2>
+            <p>Dose & Drop is committed to protecting your privacy. This policy explains how we handle your data.</p>
+        </div>
+
+        <h2>Data Collection</h2>
+        <p>Dose & Drop stores all your health data locally on your device. We do not collect, transmit, or store any of your personal health information on our servers.</p>
+        <ul>
+            <li>Weight measurements</li>
+            <li>Medication tracking data</li>
+            <li>Nutrition logs</li>
+            <li>Personal settings and preferences</li>
+        </ul>
+
+        <h2>Apple Health Integration</h2>
+        <p>If you choose to enable Apple Health integration, Dose & Drop will:</p>
+        <ul>
+            <li>Read weight data from Apple Health (with your permission)</li>
+            <li>Write weight data to Apple Health (with your permission)</li>
+            <li>All data remains within Apple's ecosystem and your device</li>
+        </ul>
+
+        <h2>Data Storage</h2>
+        <p>All app data is stored locally on your device using secure iOS storage mechanisms. Your data is never transmitted to external servers or third parties.</p>
+
+        <h2>Analytics and Tracking</h2>
+        <p>Dose & Drop does not use any analytics, tracking, or advertising services. We do not collect usage statistics or behavioral data.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>Dose & Drop does not integrate with any third-party services except for Apple Health (which is optional and requires your explicit permission).</p>
+
+        <h2>Data Security</h2>
+        <p>Your data is protected by:</p>
+        <ul>
+            <li>iOS device encryption</li>
+            <li>Secure local storage</li>
+            <li>No cloud synchronization (unless you use iCloud backup for your entire device)</li>
+            <li>No account creation required</li>
+        </ul>
+
+        <h2>Your Rights</h2>
+        <p>Since all data is stored locally on your device, you have complete control:</p>
+        <ul>
+            <li>Delete any or all data at any time</li>
+            <li>No need to request data deletion from us</li>
+            <li>Your data never leaves your device</li>
+        </ul>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Any changes will be posted within the app and on this page.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this privacy policy, please contact us at support@dosedrop.app</p>
+
+        <a href="/" class="back-link">← Back to Home</a>
     </div>
 </body>
 </html>
